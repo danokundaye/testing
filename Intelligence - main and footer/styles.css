@@ -104,61 +104,72 @@ button{
     color: #212529;
 }
 
-
-nav{
+.sticky-container {
+    background-color: #05a15e;
+    padding: 0px;
+    margin: 0px;
     position: fixed;
-    width: 55px;
-    bottom: -4%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    transition: all 0.3s linear;
-    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
-    z-index: 99;
-}
-
-nav li{
-    height: 60px;
-    position:relative;
-}
-
-nav li a{
-    color: white;
-    display: block;
-    height: 100%;
-    width: 80%;
-    line-height: 60px;
-    padding-left: 5%;
-    padding-right: 20%;
-    border-bottom: 1px solid rgba(0,0,0,.4);
-    transition: all .3s linear;
-    background: #128c7e;
+    right: -159px;
+    bottom: 30px;
+    width: 210px;
+    height: 45px;
     text-decoration: none;
 }
 
-nav li a i{
-  position:absolute;
-  top: 17px;
-  left: 15px;
-  font-size: 27px;
+.sticky li {
+    list-style-type: none;
+    background-color: #05a15e;
+    color: #efefef;
+    height: 45px;
+    padding: 0px;
+    padding-left: 0%;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
 }
 
-ul li a span{
-  display: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.sticky li span {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2px;
+    padding-top: 2px;
+    text-transform: uppercase;
+    line-height: 43px;
+    display: none;
+    transition: all 0.2s ease-in;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
-a:hover {
-    z-index:1;
-    width: 240px;
+.sticky li:hover {
+    margin-left: -115px;
+    -webkit-transform: translateX(-115px);
+            -moz-transform: translateX(-115px);
+            -o-transform: translateX(-115px);
+            -ms-transform: translateX(-115px);
+            transform:translateX(-115px);
+            background-color: #05a15e;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
 }
 
-ul li:hover a span{
-    padding-left: 20%;
+.sticky li:hover span{
     display: inline;
 }
+    
+.sticky li img {
+    float: left;
+    margin-right: 13px;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+
+
+    
 
 /*Footer*/
 footer{
